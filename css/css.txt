@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px !important;
+    background-color: hsl(0, 2%, 19%);
+}
+
+.content-pane{
+    width: 99vw;
+    height: 5000px;
+    
+}
+
+.startup-pane{
+    width: 99vw;
+    height: 100vh;
+    background-image: url("Photos/main_frame_example__.png");
+    background-size: cover;
+}
+
+.upper-bar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 12vh;
+}
+
+.logo{
+    position: absolute;
+    position: relative;
+    width: 30vw;
+    height: 100%;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+#logo-small{
+    display: inline-block;
+    position: absolute;
+    width: 55px;
+    height: 70px;
+    justify-content: center;
+    left: 3vw;
+    top: 1.3vh;
+}
+
+#logo-paragraph{
+    display: inline-block;
+    position: absolute;
+    height: 70px;
+    left: 8vw;
+    font-size: 2vw;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 0;
+}
+
+
+.nav-bar{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 64.1vw;
+    /* background-color: tomato; */
+    left: 35vw;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-list-item{
+    display: inline-flex;
+    list-style: none;
+    font-family: 'Lucida Unicode' , monospace;
+    font-size: 2.2rem;
+    width: 15vw;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-list-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icon-home, .icon-doc-text, .icon-phone{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.icon-user-circle-o{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #fff;
+}

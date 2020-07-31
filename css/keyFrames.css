@@ -1,0 +1,13 @@
+@keyframes dotScaling {
+    0%, 100%{
+        transform: scale(0);
+        background-color: blue;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: purple;
+    }
+}
+
+

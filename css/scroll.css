@@ -1,0 +1,17 @@
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(25, 0, 255, 0.904);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: repeating-linear-gradient(
+        to bottom, 
+        rgb(255, 0, 0),
+        rgb(255, 230, 0)
+        /* rgb(102, 7, 139) */
+    );
+}
