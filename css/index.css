@@ -28,6 +28,7 @@
     margin: 0 !important;
     padding: 0;
     scroll-behavior: smooth;
+    transition: all ease-in-out .2s;
 }
 
 html {
@@ -304,6 +305,7 @@ body {
 }
 
 .article-image {
+    position: absolute;
     top: 0;
     height: 50%;
     width: 100%;
@@ -349,7 +351,6 @@ body {
     line-height: 150%;
     overflow: hidden;
 }
-
 
 .article-readmore {
     border: 2px solid yellow;

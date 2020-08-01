@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    *{
+        transition: all ease-in-out .3s;
+    }
+    
+    .article-info-left, .article-info-right {
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+    }
+
+    .article-image {
+        top: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .article-info-left .article-image {
+        right: 0;
+    }
+    .article-info-right .article-image {
+        left: 0;
+    }
+
+    .article-description {
+        height: 100%;
+        width: 50%;
+        top: 0;
+    }
+
+    .article-info-left .article-description {
+        left: 0;
+    }
+
+    .article-info-right .article-description {
+        right: 0;
+    }
+}

@@ -9,7 +9,7 @@
 
 ::-webkit-scrollbar-track{
     background: repeating-linear-gradient(
-        to bottom, 
+        to top, 
         rgb(255, 0, 0),
         rgb(255, 230, 0)
         /* rgb(102, 7, 139) */
