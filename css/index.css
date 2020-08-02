@@ -1,26 +1,3 @@
-/* KEY FRAMES */
-@keyframes ring_ring {
-    0% {
-        transform: rotate(7deg);
-    }
-
-    25%{
-        transform: rotate(-7deg);
-    }
-
-    50% {
-        transform: rotate(7deg);
-    }
-
-    75%{
-        transform: rotate(-7deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
 /* CORE */
 
 *, *::before, *::after {
@@ -64,6 +41,7 @@ body {
     width: 100%;
     background-color: #fff;
     position: relative;
+    transition: none;
 }
 
 #nav-bar{
@@ -80,13 +58,9 @@ body {
 
 #nav-background {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
-    /* display: flex; */
-    height: 100vh;
-    width: 100%;
-    background-color: darkblue;
+    left: 0;
 }
 
 .nav-list{
@@ -104,7 +78,7 @@ body {
 .nav-list ul {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     flex-basis: 100%;
     text-align: center;
@@ -112,13 +86,13 @@ body {
     width: 100%;
 }
 
-.nav-list ul .main-link {
+/* .nav-list ul .main-link {
     display: flex;
     flex-direction: column;
 }
 
 .main-link {
-    /* display: block; */
+    display: block; 
     border-left: 2px solid #222;
     border-right: 2px solid #222;
     padding: .2rem;
@@ -187,13 +161,12 @@ body {
 .contact-btn:hover{
     animation: ring_ring .3s ease-in-out;
     cursor: pointer;
-}
+} */
 
 #hamburger {
     display: flex;
     width: 7vh;
     height: 7vh;
-    /* background-color: brown; */
     z-index: 2;
     justify-content: center;
     align-items: center;
@@ -278,7 +251,7 @@ body {
     border: none;
     border-style: none;
     box-shadow: 0 0 0 3px rgb(72, 14, 87), 0 0 0 6px yellow;
-    transition: .3s;
+    transition: .3s .3s;
 }
 
 #readmore:hover, #readmore:focus {
@@ -315,12 +288,6 @@ body {
     background-position: top left;
 }
 
-.article-image img {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-}
-
 .article-description {
     display: flex;
     justify-content: space-evenly;
@@ -349,7 +316,7 @@ body {
     font-weight: 500;
     text-align: justify;
     text-overflow: ellipsis;
-    line-height: 150%;
+    line-height: 155%;
     overflow: hidden;
 }
 
@@ -372,7 +339,7 @@ body {
     flex-direction: column;
 }
 
-.mail-contact, .insta-contact, .fb-contact {
+footer .mail-contact, footer .insta-contact, footer .fb-contact {
     width: 100%;
     height: 150px;
     background: #333;
