@@ -14,18 +14,37 @@
 </head>
 
 <body>
+   
+      
+    
     <header>
+       
+
+
 
         <div id="whiteline">
-            <section id="nav-bar">
-                <div id="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+            <div id="topNav" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </span>
+              <div class="logo">
+                <img src=""/>
+              </div>
+              
+              <ul class="menulist">
+                <li><a class="menuitems" href="index.html">STRONA GŁÓWNA</a></li>		
+                <li><a class="menuitems" href="blog.html">BLOG</a></li>				
+                <li><a class="menuitems" href="#">KONTAKT</a></li>
+              </ul>			
+              </div>
+              
+              <div id="main">
+              </div>
+    
 
                 <nav>
-                    
                     <div class="nav-list">
                         <ul>
                             <a href="index.html" class="main-link">
@@ -41,6 +60,7 @@
                             
                         </ul>
                     </div>
+                    
                 
                 </nav>
 
@@ -280,7 +300,10 @@
         </div>
 
         <div class="rights">
-            <p>Dawid Pałubiak &COPY;</p>
+            <p class= "one"> Dawid Pałubiak &COPY;
+            </p>
+        </div>
+        <div class="rights">
             <p> <i class="icon-lock-alt"></i> All rights reserved.</p>
         </div>
 
@@ -301,7 +324,9 @@
         $doc.on('scroll', function () {
             console.log('scroll')
         })
+
     </script>
+    
 </body>
 
 </html>
